@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { useDispatch, useSelector } from "react-redux";
 import { getPosts } from '../../store/actions/postsActions';
+import Posts from '../../components/Posts/Posts'
+
 
 
 const Home = () => {
@@ -17,7 +19,8 @@ const Home = () => {
     
     return (
         <div>
-            <h1>Hi Redux</h1>
+            <h1>Posts from JSON Placeholder</h1>
+            <Posts />
         </div>
     )
 }
